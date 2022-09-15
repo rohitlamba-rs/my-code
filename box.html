@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .main{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            margin: auto;
+            position: relative;
+        }
+
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            animation: box 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes box {
+            0%{
+                background-color: red;
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                background-color: blue;
+                top: 0px;
+                left:350px;
+            }
+            50%{
+                background-color:green;
+                top: 350px;
+                left:350px;
+            }
+            75%{
+                background-color:yellow;
+                top: 350px;
+                left:0px;
+            }
+            100%{
+                background-color:red;
+                top: 0px;
+                left:0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+
+       <div class="box">
+        
+       </div>
+
+    </div>
+
+</body>
+</html>
